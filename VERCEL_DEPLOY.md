@@ -23,6 +23,14 @@ Para fazer deploy no Vercel, você precisa configurar as seguintes variáveis de
 ### Método 2: Após o Deploy
 1. Vá ao dashboard do projeto no Vercel
 2. Clique em **Settings** → **Environment Variables**
+
+**Opção A - Importar arquivo .env:**
+- Clique em **"Import .env File"** 
+- Faça upload do seu arquivo `.env` local (não o `.env.example`)
+- Selecione: Production, Preview, Development
+- Clique **Save**
+
+**Opção B - Manual:**
 3. Adicione cada variável:
    - Name: `VITE_SUPABASE_URL`
    - Value: `https://fholmqxtsfmljrbnwnbp.supabase.co`
