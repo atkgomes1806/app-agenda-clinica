@@ -9,6 +9,11 @@ Esta pasta contém a documentação técnica do sistema de agenda clínica.
 - **`RESUMO_FEEDBACK_SUPABASE.md`** - Resumo do feedback e ajustes do Supabase AI
 - **`RETENCAO_SEMESTRAL.md`** - Documentação técnica da retenção semestral
 
+## Documentação de Deploy
+
+- **`VERCEL_DEPLOY.md`** - Guia completo para deploy no Vercel (variáveis de ambiente, configuração)
+- **`GITHUB_SETUP.md`** - Instruções para upload do projeto no GitHub
+
 ## Estrutura da Documentação
 
 ### Status da Implementação
