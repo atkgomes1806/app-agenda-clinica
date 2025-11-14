@@ -1,0 +1,79 @@
+/* Estilos de Impressão para Agenda */
+@media print {
+  /* Força modo paisagem e impressão colorida */
+  @page {
+    size: landscape;
+    margin: 0.5cm;
+  }
+
+  /* Remove elementos que não devem aparecer na impressão */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Mostra elementos que só aparecem na impressão */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Otimiza o corpo da página */
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  /* Garante que as cores de fundo sejam impressas */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  /* Ajusta tabela para caber na página */
+  table {
+    page-break-inside: auto;
+    width: 100%;
+    font-size: 10pt;
+  }
+
+  tr {
+    page-break-inside: avoid;
+    page-break-after: auto;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  /* Mantém as cores de fundo dos eventos */
+  td > div, th {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color-adjust: exact;
+  }
+
+  /* Ajusta o padding para economizar espaço */
+  th, td {
+    padding: 6px !important;
+  }
+
+  /* Garante que a legenda seja impressa */
+  .legenda-pacientes {
+    page-break-before: avoid;
+    margin-top: 16px;
+  }
+
+  /* Remove sombras e efeitos que não ficam bons impressos */
+  table {
+    box-shadow: none !important;
+  }
+
+  /* Título da página */
+  h1 {
+    font-size: 18pt;
+    margin-bottom: 12pt;
+  }
+}
